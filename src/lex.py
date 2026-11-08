@@ -184,5 +184,5 @@ def t_NEWLINE(t):
 
 # 意外处理
 def t_error(t):
-    add_lexer_error_message(f"Keyword not fount `{t.value[0]}`", AST_Node(lineno=t.lineno))
+    add_lexer_error_message(f"Keyword not found `{t.value[0]}`", AST_Node(lineno=t.lineno))
     t.lexer.skip(1)
